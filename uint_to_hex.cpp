@@ -4,6 +4,10 @@
 
 using namespace std;
 
+// It is not a universal solution.
+// For 32-bit systems you should change uint64_t to uint32_t
+// It works with negative numbers too
+
 string uint_to_hex(uint64_t a)
 {
 	string num = "";
