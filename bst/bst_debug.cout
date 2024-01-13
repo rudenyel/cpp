@@ -1,0 +1,187 @@
+new binary search tree, root = nullptr
+
+adding data 8 to the tree
+constructor: add new node 8
+adding data 3 to the tree
+current node 8, move to left
+constructor: add new node 3
+adding data 10 to the tree
+current node 8, move to right
+constructor: add new node 10
+adding data 10 to the tree
+current node 8, move to right
+data 10 is in the set, do nothing
+adding data 1 to the tree
+current node 8, move to left
+current node 3, move to left
+constructor: add new node 1
+adding data 6 to the tree
+current node 8, move to left
+current node 3, move to right
+constructor: add new node 6
+adding data 14 to the tree
+current node 8, move to right
+current node 10, move to right
+constructor: add new node 14
+adding data 4 to the tree
+current node 8, move to left
+current node 3, move to right
+current node 6, move to left
+constructor: add new node 4
+adding data 7 to the tree
+current node 8, move to left
+current node 3, move to right
+current node 6, move to right
+constructor: add new node 7
+adding data 13 to the tree
+current node 8, move to right
+current node 10, move to right
+current node 14, move to left
+constructor: add new node 13
+
+begin recursive inorder traversal
+current node 8, move to left
+current node 3, move to left
+current node 1, move to left
+next node is null
+data 1
+current node 1, move to right
+next node is null
+data 3
+current node 3, move to right
+current node 6, move to left
+current node 4, move to left
+next node is null
+data 4
+current node 4, move to right
+next node is null
+data 6
+current node 6, move to right
+current node 7, move to left
+next node is null
+data 7
+current node 7, move to right
+next node is null
+data 8
+current node 8, move to right
+current node 10, move to left
+next node is null
+data 10
+current node 10, move to right
+current node 14, move to left
+current node 13, move to left
+next node is null
+data 13
+current node 13, move to right
+next node is null
+data 14
+current node 14, move to right
+next node is null
+
+begin recursive preorder traversal
+data 8
+current node 8, move to left
+data 3
+current node 3, move to left
+data 1
+current node 1, move to left
+next node is null
+current node 1, move to right
+next node is null
+current node 3, move to right
+data 6
+current node 6, move to left
+data 4
+current node 4, move to left
+next node is null
+current node 4, move to right
+next node is null
+current node 6, move to right
+data 7
+current node 7, move to left
+next node is null
+current node 7, move to right
+next node is null
+current node 8, move to right
+data 10
+current node 10, move to left
+next node is null
+current node 10, move to right
+data 14
+current node 14, move to left
+data 13
+current node 13, move to left
+next node is null
+current node 13, move to right
+next node is null
+current node 14, move to right
+next node is null
+
+begin recursive postorder traversal
+current node 8, move to left
+current node 3, move to left
+current node 1, move to left
+next node is null
+current node 1, move to right
+next node is null
+data 1
+current node 3, move to right
+current node 6, move to left
+current node 4, move to left
+next node is null
+current node 4, move to right
+next node is null
+data 4
+current node 6, move to right
+current node 7, move to left
+next node is null
+current node 7, move to right
+next node is null
+data 7
+data 6
+data 3
+current node 8, move to right
+current node 10, move to left
+next node is null
+current node 10, move to right
+current node 14, move to left
+current node 13, move to left
+next node is null
+current node 13, move to right
+next node is null
+data 13
+current node 14, move to right
+next node is null
+data 14
+data 10
+data 8
+
+begin recursive destroy from root
+current node 8, move to left
+current node 3, move to left
+current node 1, left is nullptr
+current node 1, right is nullptr
+destroy data 1
+current node 3, move to right
+current node 6, move to left
+current node 4, left is nullptr
+current node 4, right is nullptr
+destroy data 4
+current node 6, move to right
+current node 7, left is nullptr
+current node 7, right is nullptr
+destroy data 7
+destroy data 6
+destroy data 3
+current node 8, move to right
+current node 10, left is nullptr
+current node 10, move to right
+current node 14, move to left
+current node 13, left is nullptr
+current node 13, right is nullptr
+destroy data 13
+current node 14, right is nullptr
+destroy data 14
+destroy data 10
+destroy data 8
+destroy root node, end destroy
